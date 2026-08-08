@@ -4,7 +4,8 @@ import sitemap from '@astrojs/sitemap';
 
 // Dominio provisional — se cambia también en src/consts.ts (SITE.url)
 export default defineConfig({
-  site: 'https://www.valenciaingenieria.es',
+  site: 'https://javifer31.github.io',
+  base: '/valencia-ingenieria-web',
   output: 'static',
   integrations: [
     tailwind(),

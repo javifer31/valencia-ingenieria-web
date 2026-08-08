@@ -8,7 +8,7 @@ export const SITE = {
   name: 'Valencia Ingeniería',
   legalName: 'Valencia Ingeniería',
   shortName: 'Valencia Ingeniería',
-  url: 'https://www.valenciaingenieria.es', // provisional
+  url: 'https://javifer31.github.io/valencia-ingenieria-web', // GitHub Pages
   tagline: 'Ingeniería industrial y agroalimentaria en la Comunidad Valenciana',
   description:
     'Consultoría de ingeniería en la Comunidad Valenciana: licencias de actividad, licencias ambientales, proyectos de naves agrícolas y ganaderas, y legalización de industria agroalimentaria. Presupuesto sin compromiso.',
