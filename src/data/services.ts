@@ -208,7 +208,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de nave ganadera en la Comunidad Valenciana | Ingeniería',
     short: 'Naves de bovino, porcino o avícola con proyecto técnico, licencias y legalización completa.',
     price: '4–8% del PEM',
-    image: '/industrial-nave.jpg',
+    image: '/hero-engineering.jpg',
     category: 'agro',
     keywords: ['proyecto nave ganadera valencia', 'proyecto granja comunidad valenciana', 'legalización explotación ganadera valencia'],
     intro:
@@ -233,7 +233,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de actividad agroalimentaria (obrador) | C. Valenciana',
     short: 'Obradores, carnicerías y salas de despiece en núcleo urbano. Proyecto de actividad y licencia.',
     price: '1.200–2.200 €',
-    image: '/project-agriculture.jpg',
+    image: '/project-building.jpg',
     category: 'agroalimentaria',
     keywords: ['proyecto actividad obrador valencia', 'licencia obrador comunidad valenciana', 'proyecto carnicería valencia'],
     intro:
