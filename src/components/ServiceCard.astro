@@ -10,9 +10,7 @@ const { service } = Astro.props;
   <h3 class="text-lg font-semibold text-ink group-hover:text-brand-700">{service.title}</h3>
   <p class="mt-2 flex-1 text-sm leading-relaxed text-mute">{service.short}</p>
   <div class="mt-4 flex items-center justify-between">
-    <span class="rounded-lg bg-brand-50 px-2.5 py-1 text-sm font-semibold text-brand-700">
-      {service.price}
-    </span>
+    <a href="/contacto/" class="btn-primary text-xs">Conocer precios</a>
     <span class="text-sm font-medium text-brand-600 group-hover:translate-x-0.5">Ver más →</span>
   </div>
 </a>
