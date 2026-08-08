@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import { SITE, AREA } from '../consts';
+import { services, CATEGORIES, getServicesByCategory } from '../data/services';
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url },
+  ],
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  url: SITE.url,
+  description: SITE.description,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE.url}/servicios/?search={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const featured = services.filter((s) =>
+  ['licencia-ambiental', 'comunicacion-actividad-inocua', 'memoria-agronomica', 'proyecto-nave-agricola', 'proyecto-nave-ganadera', 'nave-agroalimentaria-frio'].includes(s.slug)
+);
+
+const steps = [
+  { n: '01', t: 'Cuéntanos tu caso', d: 'Nos explicas qué quieres abrir, construir o legalizar. Sin compromiso.' },
+  { n: '02', t: 'Estudio y presupuesto', d: 'Analizamos el encaje normativo y te damos un presupuesto cerrado.' },
+  { n: '03', t: 'Redacción técnica', d: 'Redactamos y firmamos toda la documentación de ingeniería.' },
+  { n: '04', t: 'Tramitación', d: 'Presentamos y hacemos seguimiento hasta la resolución.' },
+];
+---
+
+<BaseLayout
+  path="/"
+  jsonLd={[breadcrumb, websiteSchema]}
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="container grid items-center gap-12 py-20 md:grid-cols-2 md:py-28">
+      <div class="animate-fade-up">
+        <p class="kicker">Ingeniería en la {AREA.region}</p>
+        <h1 class="mt-3 text-4xl font-bold leading-[1.1] text-ink md:text-5xl">
+          Ingeniería industrial y agroalimentaria en Valencia, Alicante y Castellón
+        </h1>
+        <p class="mt-5 max-w-lg text-lg leading-relaxed text-mute">
+          Consultoría de ingeniería industrial y agroalimentaria para toda la Comunidad Valenciana.
+          Te acompañamos desde el estudio inicial hasta la resolución del trámite.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/contacto/" class="btn-primary">Pedir presupuesto</a>
+          <a href="/servicios/" class="btn-ghost">Ver servicios</a>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-mute">
+          <span>✔ Presupuesto cerrado sin compromiso</span>
+          <span>✔ Honorarios claros desde el inicio</span>
+          <span>✔ Trámite completo de principio a fin</span>
+        </div>
+      </div>
+
+      <div class="animate-fade-up rounded-2xl border border-line bg-white p-6 shadow-lift">
+        <p class="text-sm font-semibold text-brand-700">Servicios más solicitados</p>
+        <ul class="mt-4 divide-y divide-line">
+          {featured.slice(0, 5).map((s) => (
+            <li class="flex items-center justify-between gap-4 py-3">
+              <a href={`/servicios/${s.slug}/`} class="text-sm font-medium text-ink hover:text-brand-700">{s.title}</a>
+              <span class="whitespace-nowrap text-sm font-semibold text-brand-600">{s.price}</span>
+            </li>
+          ))}
+        </ul>
+        <p class="mt-4 text-xs text-mute">Honorarios técnicos orientativos, sin tasas ni IVA.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS DESTACADOS -->
+  <section class="container py-20">
+    <div class="mb-10 max-w-2xl">
+      <p class="kicker">Qué hacemos</p>
+      <h2 class="mt-2 text-3xl font-bold">Servicios de ingeniería para tu proyecto</h2>
+      <p class="mt-3 text-mute">Desde abrir un pequeño negocio hasta legalizar una explotación agroalimentaria completa.</p>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {featured.map((s) => <ServiceCard service={s} />)}
+    </div>
+    <div class="mt-10 text-center">
+      <a href="/servicios/" class="btn-ghost">Ver todos los servicios</a>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="bg-surface py-20">
+    <div class="container">
+      <div class="mb-10 max-w-2xl">
+        <p class="kicker">Áreas de trabajo</p>
+        <h2 class="mt-2 text-3xl font-bold">Tres grandes áreas, un solo interlocutor</h2>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        {(Object.keys(CATEGORIES) as (keyof typeof CATEGORIES)[]).map((key) => (
+          <div class="card">
+            <h3 class="text-lg font-semibold text-brand-700">{CATEGORIES[key].label}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mute">{CATEGORIES[key].desc}</p>
+            <ul class="mt-4 space-y-1.5 text-sm">
+              {getServicesByCategory(key).map((s) => (
+                <li><a href={`/servicios/${s.slug}/`} class="text-mute hover:text-brand-700">→ {s.title}</a></li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="container py-20">
+    <div class="mb-10 max-w-2xl">
+      <p class="kicker">Cómo trabajamos</p>
+      <h2 class="mt-2 text-3xl font-bold">Un proceso claro en cuatro pasos</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-4">
+      {steps.map((s) => (
+        <div class="card">
+          <span class="font-display text-3xl font-bold text-brand-200">{s.n}</span>
+          <h3 class="mt-2 text-base font-semibold text-ink">{s.t}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-mute">{s.d}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container pb-8">
+    <div class="rounded-2xl bg-brand-700 px-8 py-14 text-center text-white md:px-16">
+      <h2 class="text-3xl font-bold text-white">¿Tienes un proyecto en mente?</h2>
+      <p class="mx-auto mt-3 max-w-xl text-brand-100">
+        Cuéntanos qué necesitas abrir, construir o legalizar y te damos un presupuesto cerrado sin compromiso.
+      </p>
+      <a href="/contacto/" class="btn-accent mt-8">Pedir presupuesto gratis</a>
+    </div>
+  </section>
+</BaseLayout>

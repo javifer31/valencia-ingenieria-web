@@ -1,0 +1,46 @@
+---
+import { SITE, NAV } from '../consts';
+const current = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? current === '/' : current.startsWith(href);
+---
+
+<header class="sticky top-0 z-50 border-b border-line/70 bg-white/85 backdrop-blur">
+  <nav class="container flex h-16 items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5 font-display text-lg font-bold text-brand-800">
+      <img src="/logo-valencia-ingenieria.jpg" alt="Valencia Ingeniería - Logo" class="h-9 w-9 rounded-lg object-cover" />
+      <span>{SITE.name}</span>
+    </a>
+
+    <div class="hidden items-center gap-1 md:flex">
+      {NAV.map((item) => (
+        <a
+          href={item.href}
+          class={`rounded-lg px-3 py-2 text-sm font-medium ${
+            isActive(item.href) ? 'text-brand-700' : 'text-mute hover:text-brand-700'
+          }`}
+        >
+          {item.label}
+        </a>
+      ))}
+      <a href="/contacto/" class="btn-primary ml-2">Pedir presupuesto</a>
+    </div>
+
+    <!-- Menú móvil (details = sin JS) -->
+    <details class="relative md:hidden">
+      <summary class="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-lg border border-line">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </summary>
+      <div class="absolute right-0 mt-2 w-56 rounded-xl border border-line bg-white p-2 shadow-lift">
+        {NAV.map((item) => (
+          <a href={item.href} class="block rounded-lg px-3 py-2 text-sm text-ink hover:bg-brand-50">
+            {item.label}
+          </a>
+        ))}
+        <a href="/contacto/" class="btn-primary mt-1 w-full">Pedir presupuesto</a>
+      </div>
+    </details>
+  </nav>
+</header>

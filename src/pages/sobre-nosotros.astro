@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, AREA } from '../consts';
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Sobre nosotros', item: `${SITE.url}/sobre-nosotros/` },
+  ],
+};
+
+const values = [
+  { t: 'Cercanía técnica', d: 'Traducimos la normativa a lenguaje claro. Sabes en todo momento qué se hace y por qué.' },
+  { t: 'Presupuesto cerrado', d: 'Nada de sorpresas: honorarios claros desde el primer estudio.' },
+  { t: 'De principio a fin', d: 'Nos ocupamos de la redacción técnica y de toda la tramitación hasta la resolución.' },
+  { t: 'Toda la Comunidad', d: `Trabajamos en las tres provincias: ${AREA.provinces.join(', ')}.` },
+];
+---
+
+<BaseLayout
+  title="Sobre nosotros"
+  description={`Somos ${SITE.name}, consultoría de ingeniería industrial y agroalimentaria en la Comunidad Valenciana.`}
+  path="/sobre-nosotros/"
+  jsonLd={breadcrumb}
+>
+  <section class="border-b border-line bg-surface">
+    <div class="container py-16">
+      <p class="kicker">Quiénes somos</p>
+      <h1 class="mt-2 max-w-3xl text-4xl font-bold">Valencia Ingeniería: consultoría técnica en la Comunidad Valenciana</h1>
+      <p class="mt-4 max-w-2xl text-lg text-mute">
+        {SITE.name} nace para poner la ingeniería industrial y agroalimentaria al alcance de
+        pymes, agricultores y ganaderos de la {AREA.region}. Menos burocracia, más soluciones.
+      </p>
+    </div>
+  </section>
+
+  <section class="container py-16">
+    <div class="grid gap-10 md:grid-cols-2">
+      <div class="prose-block">
+        <h2 class="text-2xl font-bold">Nuestra forma de trabajar</h2>
+        <p class="mt-3">
+          Detrás de cada trámite hay un proyecto real: abrir un negocio, construir una nave o
+          legalizar una explotación. Nuestro trabajo es que ese proyecto salga adelante con la
+          documentación técnica correcta y sin sobresaltos con la administración.
+        </p>
+        <p class="mt-3">
+          Combinamos experiencia en ingeniería con un trato directo: estudiamos tu caso, te
+          explicamos las opciones y nos encargamos de todo el proceso.
+        </p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2">
+        {values.map((v) => (
+          <div class="card">
+            <h3 class="text-base font-semibold text-brand-700">{v.t}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mute">{v.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="container pb-8">
+    <div class="rounded-2xl bg-brand-700 px-8 py-14 text-center text-white md:px-16">
+      <h2 class="text-3xl font-bold text-white">Cuéntanos tu proyecto</h2>
+      <p class="mx-auto mt-3 max-w-xl text-brand-100">Estudiamos tu caso y te damos un presupuesto cerrado sin compromiso.</p>
+      <a href="/contacto/" class="btn-accent mt-8">Contactar</a>
+    </div>
+  </section>
+</BaseLayout>
