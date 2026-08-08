@@ -50,6 +50,7 @@ export const CONTACT = {
 export const NAV = [
   { label: 'Inicio', href: '/' },
   { label: 'Servicios', href: '/servicios/' },
+  { label: 'Blog', href: '/blog/' },
   { label: 'Sobre nosotros', href: '/sobre-nosotros/' },
   { label: 'Contacto', href: '/contacto/' },
 ] as const;

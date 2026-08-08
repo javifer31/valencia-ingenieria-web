@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../consts';
+import { posts } from '../../data/blog';
+import { withBase } from '../../lib/paths';
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE.url}/blog/` },
+  ],
+};
+
+const sorted = [...posts].sort((a, b) => b.publishDate.localeCompare(a.publishDate));
+---
+
+<BaseLayout
+  title="Blog"
+  description="Guías claras sobre licencias, medio ambiente y trámites de ingeniería para negocios, explotaciones e industria en la Comunidad Valenciana."
+  path="/blog/"
+  jsonLd={breadcrumb}
+>
+  <section class="border-b border-line bg-surface">
+    <div class="container py-16">
+      <p class="kicker">Blog</p>
+      <h1 class="mt-2 text-4xl font-bold">Guías de licencias y trámites técnicos</h1>
+      <p class="mt-4 max-w-2xl text-lg text-mute">
+        Explicamos en lenguaje claro qué trámite necesitas y por qué, antes de que te lo explique un requerimiento del ayuntamiento.
+      </p>
+    </div>
+  </section>
+
+  <section class="container py-16">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {sorted.map((post) => (
+        <a
+          href={withBase(`/blog/${post.slug}/`)}
+          class="card group flex flex-col hover:-translate-y-1 hover:border-brand-300 hover:shadow-lift"
+        >
+          <p class="text-xs font-medium text-mute">
+            {new Date(post.publishDate).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}
+          </p>
+          <h2 class="mt-2 text-lg font-semibold text-ink group-hover:text-brand-700">{post.title}</h2>
+          <p class="mt-2 flex-1 text-sm leading-relaxed text-mute">{post.description}</p>
+          <span class="mt-4 text-sm font-medium text-brand-600 group-hover:translate-x-0.5">Leer más →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
