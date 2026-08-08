@@ -12,6 +12,7 @@ export type Service = {
   metaTitle: string; // <title> optimizado para SEO
   short: string; // descripción corta (tarjetas)
   price: string; // rango orientativo
+  image: string; // foto en /public, p.ej. '/industrial-nave.jpg'
   category: 'licencias' | 'agro' | 'agroalimentaria';
   keywords: string[];
   intro: string; // párrafo de apertura
@@ -43,6 +44,7 @@ export const services: Service[] = [
     metaTitle: 'Comunicación de actividad inocua en la Comunidad Valenciana',
     short: 'Aviso al ayuntamiento para abrir un negocio sin impacto ambiental relevante: oficinas, tiendas y pequeños almacenes.',
     price: '500–700 €',
+    image: '/project-building.jpg',
     category: 'licencias',
     keywords: ['comunicación actividad inocua valencia', 'licencia actividad inocua comunidad valenciana', 'abrir oficina valencia'],
     intro:
@@ -66,6 +68,7 @@ export const services: Service[] = [
     metaTitle: 'Declaración responsable ambiental de actividad en la C. Valenciana',
     short: 'Para actividades con incidencia ambiental moderada. Declaras que cumples la normativa y puedes empezar a funcionar.',
     price: '800–1.100 €',
+    image: '/team-meeting.jpg',
     category: 'licencias',
     keywords: ['declaración responsable ambiental valencia', 'declaración responsable actividad comunidad valenciana'],
     intro:
@@ -88,6 +91,7 @@ export const services: Service[] = [
     metaTitle: 'Licencia ambiental en la Comunidad Valenciana | Talleres e industria',
     short: 'Autorización completa para actividades con impacto claro (ruido, emisiones, residuos): talleres, industria ligera y granjas medianas.',
     price: '1.200–2.200 €',
+    image: '/industrial-nave.jpg',
     category: 'licencias',
     keywords: ['licencia ambiental comunidad valenciana', 'licencia ambiental valencia', 'licencia actividad taller valencia'],
     intro:
@@ -110,6 +114,7 @@ export const services: Service[] = [
     metaTitle: 'Autorización Ambiental Integrada (AAI) en la Comunidad Valenciana',
     short: 'La "mega-licencia" ambiental para grandes industrias: integra todas las autorizaciones ambientales en una.',
     price: 'Honorarios a medida',
+    image: '/project-bridge.jpg',
     category: 'licencias',
     keywords: ['autorización ambiental integrada valencia', 'AAI comunidad valenciana', 'ippc valencia'],
     intro:
@@ -134,6 +139,7 @@ export const services: Service[] = [
     metaTitle: 'Memoria agronómica para suelo rústico en la Comunidad Valenciana',
     short: 'Informe técnico que justifica por qué necesitas construir en suelo rústico: naves agrícolas, balsas, granjas y casetas de aperos.',
     price: '600–1.500 €',
+    image: '/project-agriculture.jpg',
     category: 'agro',
     keywords: ['memoria agronómica valencia', 'memoria agronómica suelo rústico comunidad valenciana', 'construir suelo rústico valencia'],
     intro:
@@ -156,6 +162,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de nave agrícola en la Comunidad Valenciana | Ingeniería',
     short: 'Proyecto técnico para almacén de aperos, maquinaria o grano. Base para pedir la licencia de obras.',
     price: '2.000–4.000 €',
+    image: '/project-construction.jpg',
     category: 'agro',
     keywords: ['proyecto nave agrícola valencia', 'proyecto nave agrícola comunidad valenciana', 'nave almacén agrícola valencia'],
     intro:
@@ -178,6 +185,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de caseta de aperos o nave agrícola pequeña | C. Valenciana',
     short: 'Para casetas de aperos o naves muy sencillas. Solución técnica ajustada y económica.',
     price: 'Desde 1.200 €',
+    image: '/team-work.jpg',
     category: 'agro',
     keywords: ['proyecto caseta aperos valencia', 'caseta aperos suelo rústico comunidad valenciana', 'legalizar caseta aperos valencia'],
     intro:
@@ -200,6 +208,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de nave ganadera en la Comunidad Valenciana | Ingeniería',
     short: 'Naves de bovino, porcino o avícola con proyecto técnico, licencias y legalización completa.',
     price: '4–8% del PEM',
+    image: '/industrial-nave.jpg',
     category: 'agro',
     keywords: ['proyecto nave ganadera valencia', 'proyecto granja comunidad valenciana', 'legalización explotación ganadera valencia'],
     intro:
@@ -224,6 +233,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de actividad agroalimentaria (obrador) | C. Valenciana',
     short: 'Obradores, carnicerías y salas de despiece en núcleo urbano. Proyecto de actividad y licencia.',
     price: '1.200–2.200 €',
+    image: '/project-agriculture.jpg',
     category: 'agroalimentaria',
     keywords: ['proyecto actividad obrador valencia', 'licencia obrador comunidad valenciana', 'proyecto carnicería valencia'],
     intro:
@@ -246,6 +256,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de nave agroalimentaria con cámaras de frío | C. Valenciana',
     short: 'Nave de manipulado con cámaras frigoríficas: proyecto, instalaciones, licencias y legalización completa.',
     price: '5.000–15.000 €',
+    image: '/industrial-nave.jpg',
     category: 'agroalimentaria',
     keywords: ['nave agroalimentaria valencia', 'proyecto cámara frigorífica comunidad valenciana', 'nave manipulado alimentos valencia'],
     intro:
@@ -268,6 +279,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de explotación avícola en la Comunidad Valenciana',
     short: 'Nave de gallinas + centro de clasificación + documentación de registro sanitario, como conjunto.',
     price: '≈ 4.500 € el conjunto',
+    image: '/project-agriculture.jpg',
     category: 'agroalimentaria',
     keywords: ['proyecto explotación avícola valencia', 'nave gallinas comunidad valenciana', 'registro sanitario avícola valencia'],
     intro:

@@ -6,8 +6,15 @@ const { service } = Astro.props;
 ---
 <a
   href={withBase(`/servicios/${service.slug}/`)}
-  class="card group flex flex-col hover:-translate-y-1 hover:border-brand-300 hover:shadow-lift"
+  class="card group flex flex-col overflow-hidden hover:-translate-y-1 hover:border-brand-300 hover:shadow-lift"
 >
+  <div class="-mx-6 -mt-6 mb-4 h-36 overflow-hidden">
+    <img
+      src={withBase(service.image)}
+      alt={service.title}
+      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+    />
+  </div>
   <h3 class="text-lg font-semibold text-ink group-hover:text-brand-700">{service.title}</h3>
   <p class="mt-2 flex-1 text-sm leading-relaxed text-mute">{service.short}</p>
   <div class="mt-4 flex items-center justify-between">
