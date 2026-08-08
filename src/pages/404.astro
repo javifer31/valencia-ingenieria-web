@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
 ---
 <BaseLayout title="Página no encontrada" path="/404/" noindex={true}>
   <section class="container flex min-h-[50vh] flex-col items-center justify-center py-24 text-center">
@@ -7,8 +8,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <h1 class="mt-4 text-2xl font-bold">Esta página no existe</h1>
     <p class="mt-2 text-mute">Puede que el enlace esté roto o la página se haya movido.</p>
     <div class="mt-8 flex gap-3">
-      <a href="/" class="btn-primary">Volver al inicio</a>
-      <a href="/servicios/" class="btn-ghost">Ver servicios</a>
+      <a href={withBase('/')} class="btn-primary">Volver al inicio</a>
+      <a href={withBase('/servicios/')} class="btn-ghost">Ver servicios</a>
     </div>
   </section>
 </BaseLayout>

@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import { SITE, AREA } from '../consts';
+import { withBase } from '../lib/paths';
 
 export interface Props {
   title?: string;
@@ -21,7 +22,7 @@ const {
 } = Astro.props;
 
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — Ingeniería en Valencia, Alicante y Castellón`;
-const canonical = new URL(path, SITE.url).href;
+const canonical = `${SITE.url}${path}`;
 
 // Schema base de la organización (LocalBusiness cuando haya dirección/teléfono).
 const orgSchema = {
@@ -59,14 +60,14 @@ const schemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={`${SITE.url}/logo-valencia-ingenieria.jpg`} />
+    <meta property="og:image" content={`${SITE.url}/logo-licenza.jpg`} />
     <meta property="og:locale" content="es_ES" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${SITE.url}/logo-valencia-ingenieria.jpg`} />
+    <meta name="twitter:image" content={`${SITE.url}/logo-licenza.jpg`} />
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
 
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

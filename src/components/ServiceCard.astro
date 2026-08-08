@@ -1,16 +1,17 @@
 ---
 import type { Service } from '../data/services';
+import { withBase } from '../lib/paths';
 export interface Props { service: Service }
 const { service } = Astro.props;
 ---
 <a
-  href={`/servicios/${service.slug}/`}
+  href={withBase(`/servicios/${service.slug}/`)}
   class="card group flex flex-col hover:-translate-y-1 hover:border-brand-300 hover:shadow-lift"
 >
   <h3 class="text-lg font-semibold text-ink group-hover:text-brand-700">{service.title}</h3>
   <p class="mt-2 flex-1 text-sm leading-relaxed text-mute">{service.short}</p>
   <div class="mt-4 flex items-center justify-between">
-    <a href="/contacto/" class="btn-primary text-xs">Conocer precios</a>
+    <a href={withBase('/contacto/')} class="btn-primary text-xs">Conocer precios</a>
     <span class="text-sm font-medium text-brand-600 group-hover:translate-x-0.5">Ver más →</span>
   </div>
 </a>

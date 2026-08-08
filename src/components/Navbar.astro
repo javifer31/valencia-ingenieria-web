@@ -1,21 +1,24 @@
 ---
 import { SITE, NAV } from '../consts';
+import { withBase } from '../lib/paths';
 const current = Astro.url.pathname;
-const isActive = (href: string) =>
-  href === '/' ? current === '/' : current.startsWith(href);
+const isActive = (href: string) => {
+  const target = withBase(href);
+  return href === '/' ? current === target : current.startsWith(target);
+};
 ---
 
 <header class="sticky top-0 z-50 border-b border-line/70 bg-white/85 backdrop-blur">
   <nav class="container flex h-16 items-center justify-between">
-    <a href="/" class="flex items-center gap-2.5 font-display text-lg font-bold text-brand-800">
-      <img src="/logo-licenza.jpg" alt="Licenza Ingenieros - Logo" class="h-9 w-9 rounded-lg object-cover" />
+    <a href={withBase('/')} class="flex items-center gap-2.5 font-display text-lg font-bold text-brand-800">
+      <img src={withBase('/logo-licenza.jpg')} alt="Licenza Ingenieros - Logo" class="h-9 w-9 rounded-lg object-cover" />
       <span>{SITE.name}</span>
     </a>
 
     <div class="hidden items-center gap-1 md:flex">
       {NAV.map((item) => (
         <a
-          href={item.href}
+          href={withBase(item.href)}
           class={`rounded-lg px-3 py-2 text-sm font-medium ${
             isActive(item.href) ? 'text-brand-700' : 'text-mute hover:text-brand-700'
           }`}
@@ -23,7 +26,7 @@ const isActive = (href: string) =>
           {item.label}
         </a>
       ))}
-      <a href="/contacto/" class="btn-primary ml-2">Pedir presupuesto</a>
+      <a href={withBase('/contacto/')} class="btn-primary ml-2">Pedir presupuesto</a>
     </div>
 
     <!-- Menú móvil (details = sin JS) -->
@@ -35,11 +38,11 @@ const isActive = (href: string) =>
       </summary>
       <div class="absolute right-0 mt-2 w-56 rounded-xl border border-line bg-white p-2 shadow-lift">
         {NAV.map((item) => (
-          <a href={item.href} class="block rounded-lg px-3 py-2 text-sm text-ink hover:bg-brand-50">
+          <a href={withBase(item.href)} class="block rounded-lg px-3 py-2 text-sm text-ink hover:bg-brand-50">
             {item.label}
           </a>
         ))}
-        <a href="/contacto/" class="btn-primary mt-1 w-full">Pedir presupuesto</a>
+        <a href={withBase('/contacto/')} class="btn-primary mt-1 w-full">Pedir presupuesto</a>
       </div>
     </details>
   </nav>
