@@ -1,17 +1,17 @@
 // ─────────────────────────────────────────────────────────────
-//  CONFIGURACIÓN CENTRAL DE MARCA — Valencia Ingeniería
+//  CONFIGURACIÓN CENTRAL DE MARCA — Licenza Ingenieros
 //  Cambiar aquí nombre, dominio, zona y (más adelante) contacto.
 //  El dominio también está en astro.config.mjs (site).
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
-  name: 'Valencia Ingeniería',
-  legalName: 'Valencia Ingeniería',
-  shortName: 'Valencia Ingeniería',
+  name: 'Licenza Ingenieros',
+  legalName: 'Licenza Ingenieros S.L.',
+  shortName: 'Licenza',
   url: 'https://javifer31.github.io/valencia-ingenieria-web', // GitHub Pages
-  tagline: 'Ingeniería industrial y agroalimentaria en la Comunidad Valenciana',
+  tagline: 'Ingeniería técnica para la Comunidad Valenciana',
   description:
-    'Consultoría de ingeniería en la Comunidad Valenciana: licencias de actividad, licencias ambientales, proyectos de naves agrícolas y ganaderas, y legalización de industria agroalimentaria. Presupuesto sin compromiso.',
+    'Licenza Ingenieros: consultoría técnica especializada en licencias de actividad, proyectos ambientales, naves agrícolas y ganaderas, e industria agroalimentaria en Valencia, Alicante y Castellón.',
   locale: 'es-ES',
   lang: 'es',
 } as const;

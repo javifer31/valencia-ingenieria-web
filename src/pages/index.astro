@@ -41,40 +41,44 @@ const steps = [
   path="/"
   jsonLd={[breadcrumb, websiteSchema]}
 >
-  <!-- HERO -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
-    <div class="container grid items-center gap-12 py-20 md:grid-cols-2 md:py-28">
-      <div class="animate-fade-up">
-        <p class="kicker">Ingeniería en la {AREA.region}</p>
-        <h1 class="mt-3 text-4xl font-bold leading-[1.1] text-ink md:text-5xl">
-          Ingeniería industrial y agroalimentaria en Valencia, Alicante y Castellón
+  <!-- HERO con imagen de fondo -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="./hero-engineering.jpg" alt="Proyectos de ingeniería" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-brand-900/75"></div>
+    </div>
+    <div class="container relative grid items-center gap-12 py-24 md:grid-cols-2 md:py-32">
+      <div class="animate-fade-up text-white">
+        <p class="text-sm font-medium tracking-wider text-brand-200 uppercase">Consultoría técnica · {AREA.region}</p>
+        <h1 class="mt-4 text-4xl font-bold leading-[1.1] text-white md:text-5xl lg:text-6xl">
+          Ingeniería de precisión para cada proyecto
         </h1>
-        <p class="mt-5 max-w-lg text-lg leading-relaxed text-mute">
-          Consultoría de ingeniería industrial y agroalimentaria para toda la Comunidad Valenciana.
-          Te acompañamos desde el estudio inicial hasta la resolución del trámite.
+        <p class="mt-5 max-w-lg text-lg leading-relaxed text-brand-100">
+          Licenza Ingenieros: licencias de actividad, proyectos ambientales, naves agrícolas y
+          legalización agroalimentaria en Valencia, Alicante y Castellón.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="/contacto/" class="btn-primary">Pedir presupuesto</a>
-          <a href="/servicios/" class="btn-ghost">Ver servicios</a>
+          <a href="/servicios/" class="btn-accent">Ver servicios</a>
         </div>
-        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-mute">
-          <span>✔ Presupuesto cerrado sin compromiso</span>
-          <span>✔ Honorarios claros desde el inicio</span>
-          <span>✔ Trámite completo de principio a fin</span>
+        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-brand-200">
+          <span>✔ Presupuesto cerrado</span>
+          <span>✔ Honorarios transparentes</span>
+          <span>✔ Trámite completo</span>
         </div>
       </div>
 
-      <div class="animate-fade-up rounded-2xl border border-line bg-white p-6 shadow-lift">
-        <p class="text-sm font-semibold text-brand-700">Servicios más solicitados</p>
-        <ul class="mt-4 divide-y divide-line">
+      <div class="animate-fade-up rounded-2xl border border-white/20 bg-white/10 p-6 shadow-lift backdrop-blur">
+        <p class="text-sm font-semibold text-brand-200">Servicios más solicitados</p>
+        <ul class="mt-4 divide-y divide-white/20">
           {featured.slice(0, 5).map((s) => (
             <li class="flex items-center justify-between gap-4 py-3">
-              <a href={`/servicios/${s.slug}/`} class="text-sm font-medium text-ink hover:text-brand-700">{s.title}</a>
-              <span class="whitespace-nowrap text-sm font-semibold text-brand-600">{s.price}</span>
+              <a href={`/servicios/${s.slug}/`} class="text-sm font-medium text-white hover:text-brand-200">{s.title}</a>
+              <span class="whitespace-nowrap text-sm font-semibold text-brand-200">{s.price}</span>
             </li>
           ))}
         </ul>
-        <p class="mt-4 text-xs text-mute">Honorarios técnicos orientativos, sin tasas ni IVA.</p>
+        <p class="mt-4 text-xs text-brand-200/80">Honorarios técnicos orientativos, sin tasas ni IVA.</p>
       </div>
     </div>
   </section>
