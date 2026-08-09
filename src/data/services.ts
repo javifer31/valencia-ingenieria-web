@@ -233,7 +233,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de actividad agroalimentaria (obrador) | C. Valenciana',
     short: 'Obradores, carnicerías y salas de despiece en núcleo urbano. Proyecto de actividad y licencia.',
     price: '1.200–2.200 €',
-    image: '/project-building.jpg',
+    image: '/obrador-alimentario.jpg',
     category: 'agroalimentaria',
     keywords: ['proyecto actividad obrador valencia', 'licencia obrador comunidad valenciana', 'proyecto carnicería valencia'],
     intro:
@@ -256,7 +256,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de nave agroalimentaria con cámaras de frío | C. Valenciana',
     short: 'Nave de manipulado con cámaras frigoríficas: proyecto, instalaciones, licencias y legalización completa.',
     price: '5.000–15.000 €',
-    image: '/industrial-nave.jpg',
+    image: '/camara-frio-alimentaria.jpg',
     category: 'agroalimentaria',
     keywords: ['nave agroalimentaria valencia', 'proyecto cámara frigorífica comunidad valenciana', 'nave manipulado alimentos valencia'],
     intro:
@@ -279,7 +279,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de explotación avícola en la Comunidad Valenciana',
     short: 'Nave de gallinas + centro de clasificación + documentación de registro sanitario, como conjunto.',
     price: '≈ 4.500 € el conjunto',
-    image: '/project-agriculture.jpg',
+    image: '/nave-avicola.jpg',
     category: 'agroalimentaria',
     keywords: ['proyecto explotación avícola valencia', 'nave gallinas comunidad valenciana', 'registro sanitario avícola valencia'],
     intro:
