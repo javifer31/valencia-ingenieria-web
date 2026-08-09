@@ -1,0 +1,54 @@
+# Keywords pendientes para el blog de Licenza Ingenieros
+# Formato: keyword_principal | servicios_relacionados (slugs separados por coma)
+# El cron job lee la primera línea NO comentada, genera el artículo y la comenta con # DONE
+#
+# DONE qué licencia necesito para abrir un negocio en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
+# DONE licencia actividad taller mecánico valencia | licencia-ambiental
+abrir restaurante valencia requisitos licencia | declaracion-responsable-ambiental
+licencia actividad bar cafetería valencia | declaracion-responsable-ambiental
+comunicación actividad inocua precio y plazo valencia | comunicacion-actividad-inocua
+declaración responsable ambiental valencia precio requisitos | declaracion-responsable-ambiental
+licencia ambiental comunidad valenciana requisitos | licencia-ambiental
+qué actividades necesitan licencia ambiental en valencia | licencia-ambiental
+legalizar negocio sin licencia valencia qué hacer | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
+multa por abrir sin licencia de actividad valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
+cambio de actividad local comercial valencia trámite | comunicacion-actividad-inocua,declaracion-responsable-ambiental
+licencia actividad clínica dental consulta médica valencia | declaracion-responsable-ambiental
+licencia actividad gimnasio crossfit box valencia | declaracion-responsable-ambiental
+licencia peluquería centro estética valencia | comunicacion-actividad-inocua
+abrir tienda online con almacén valencia licencia | comunicacion-actividad-inocua
+licencia actividad coworking espacio compartido valencia | comunicacion-actividad-inocua
+segunda actividad en el mismo local valencia | declaracion-responsable-ambiental
+renovar licencia de actividad caducada valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental
+cuánto tarda licencia de actividad en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
+construir nave agrícola suelo rústico valencia | proyecto-nave-agricola,memoria-agronomica
+caseta de aperos suelo rústico valencia normativa | proyecto-nave-agricola-pequena,memoria-agronomica
+legalizar construcción suelo rústico comunidad valenciana | memoria-agronomica
+memoria agronómica para qué sirve cuándo la necesito | memoria-agronomica
+se puede construir en suelo rústico en la comunidad valenciana | memoria-agronomica
+balsa de riego proyecto suelo rústico valencia | proyecto-nave-agricola,memoria-agronomica
+legalizar pozo agua suelo rústico valencia | memoria-agronomica
+proyecto granja avícola valencia requisitos | explotacion-avicola
+nave ganadera porcino comunidad valenciana proyecto | proyecto-nave-ganadera
+ampliación explotación ganadera valencia licencia | proyecto-nave-ganadera,licencia-ambiental
+abrir obrador de pan panadería valencia requisitos | proyecto-actividad-agroalimentaria
+montar carnicería con obrador valencia licencia | proyecto-actividad-agroalimentaria
+registro sanitario obrador artesanal comunidad valenciana | proyecto-actividad-agroalimentaria
+nave manipulado fruta comunidad valenciana proyecto | nave-agroalimentaria-frio
+cámara frigorífica nave industrial valencia proyecto | nave-agroalimentaria-frio
+requisitos centro clasificación huevos comunidad valenciana | explotacion-avicola
+appcc obligatorio pequeño obrador valencia | proyecto-actividad-agroalimentaria
+proyecto almazara aceite oliva comunidad valenciana | nave-agroalimentaria-frio
+bodega vino proyecto ingeniería valencia | nave-agroalimentaria-frio
+sala despiece carne valencia requisitos licencia | proyecto-actividad-agroalimentaria
+cuánto cuesta un proyecto de ingeniería en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental,proyecto-nave-agricola
+qué hace un ingeniero agrónomo y cuándo lo necesitas | memoria-agronomica,proyecto-nave-agricola,proyecto-nave-ganadera
+diferencia licencia de obras y licencia de actividad | comunicacion-actividad-inocua,licencia-ambiental
+expediente disciplinario urbanístico valencia qué hacer | memoria-agronomica,licencia-ambiental
+informe de compatibilidad urbanística valencia para qué sirve | comunicacion-actividad-inocua,declaracion-responsable-ambiental
+cambio de uso suelo rústico a industrial valencia | nave-agroalimentaria-frio,licencia-ambiental
+plazo máximo resolución licencia ambiental comunidad valenciana | licencia-ambiental
+declaración de interés comunitario valencia DIC | memoria-agronomica,nave-agroalimentaria-frio
+legalizaciones obra antigua suelo rústico valencia | memoria-agronomica
+licencia apertura farmacia valencia requisitos | declaracion-responsable-ambiental
+autorización ambiental integrada AAI cuándo hace falta | autorizacion-ambiental-integrada
