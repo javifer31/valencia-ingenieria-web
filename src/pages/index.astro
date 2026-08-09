@@ -45,7 +45,16 @@ const steps = [
   <!-- HERO con imagen de fondo -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0">
-      <img src={withBase('/hero-engineering.jpg')} alt="Proyectos de ingeniería" class="h-full w-full object-cover" />
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        poster={withBase('/hero-engineering.jpg')}
+        class="h-full w-full object-cover"
+      >
+        <source src={withBase('/hero-ingenieria.mp4')} type="video/mp4" />
+      </video>
       <div class="absolute inset-0 bg-brand-900/75"></div>
     </div>
     <div class="container relative py-24 md:py-32">
