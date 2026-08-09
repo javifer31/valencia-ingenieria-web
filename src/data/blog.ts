@@ -69,27 +69,6 @@ export const posts: BlogPost[] = [
     relatedServices: ['comunicacion-actividad-inocua', 'declaracion-responsable-ambiental', 'licencia-ambiental'],
   },
   {
-    slug: 'test-post-verificacion',
-    title: 'Test de verificación',
-    metaTitle: 'Test verificación',
-    description:
-      'Este es un test de verificación del script de generación de blog posts para Licenza Ingenieros.',
-    publishDate: '2026-08-09',
-    keywords: ['test'],
-    intro:
-      'Este es un post de prueba para verificar que el script funciona.',
-    sections: [
-      {
-        heading: 'Sección de prueba',
-        paragraphs: [
-          'Párrafo de prueba con tildes y eñes.',
-          'Segundo párrafo con apóstrofe y más texto.',
-        ],
-      },
-    ],
-    relatedServices: ['comunicacion-actividad-inocua'],
-  },
-  {
     slug: 'que-licencia-necesito-para-abrir-un-negocio-en-valencia',
     title: 'Guía Completa: ¿Qué Licencia Necesito para Abrir un Negocio en Valencia?',
     metaTitle: 'Licencia Negocio Valencia: Guía para Emprendedores',
