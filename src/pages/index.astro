@@ -44,20 +44,21 @@ const steps = [
 >
   <!-- HERO con imagen de fondo -->
   <section class="relative overflow-hidden">
-    <div class="absolute inset-0">
+        <div class="absolute inset-0">
       <video
         id="hero-video"
         autoplay
         muted
         loop
         playsinline
-        poster={withBase('/hero-engineering.jpg')}
+        preload="auto"
         class="h-full w-full object-cover"
       >
         <source src={withBase('/hero-ingenieria.mp4')} type="video/mp4" />
       </video>
       <div class="absolute inset-0 bg-brand-900/75"></div>
     </div>
+
     <script>
       const video = document.getElementById('hero-video') as HTMLVideoElement | null;
       if (video) {
