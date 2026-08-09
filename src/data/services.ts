@@ -44,7 +44,7 @@ export const services: Service[] = [
     metaTitle: 'Comunicación de actividad inocua en la Comunidad Valenciana',
     short: 'Aviso al ayuntamiento para abrir un negocio sin impacto ambiental relevante: oficinas, tiendas y pequeños almacenes.',
     price: '500–700 €',
-    image: '/project-building.jpg',
+    image: '/comunicacion-actividad-inocua.jpg',
     category: 'licencias',
     keywords: ['comunicación actividad inocua valencia', 'licencia actividad inocua comunidad valenciana', 'abrir oficina valencia'],
     intro:
