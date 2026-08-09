@@ -91,7 +91,7 @@ export const services: Service[] = [
     metaTitle: 'Licencia ambiental en la Comunidad Valenciana | Talleres e industria',
     short: 'Autorización completa para actividades con impacto claro (ruido, emisiones, residuos): talleres, industria ligera y granjas medianas.',
     price: '1.200–2.200 €',
-    image: '/industrial-nave.jpg',
+    image: '/licencia-ambiental-eolico.jpg',
     category: 'licencias',
     keywords: ['licencia ambiental comunidad valenciana', 'licencia ambiental valencia', 'licencia actividad taller valencia'],
     intro:
@@ -208,7 +208,7 @@ export const services: Service[] = [
     metaTitle: 'Proyecto de nave ganadera en la Comunidad Valenciana | Ingeniería',
     short: 'Naves de bovino, porcino o avícola con proyecto técnico, licencias y legalización completa.',
     price: '4–8% del PEM',
-    image: '/hero-engineering.jpg',
+    image: '/nave-ganadera-vacuno.jpg',
     category: 'agro',
     keywords: ['proyecto nave ganadera valencia', 'proyecto granja comunidad valenciana', 'legalización explotación ganadera valencia'],
     intro:
