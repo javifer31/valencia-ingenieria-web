@@ -4,7 +4,7 @@
 #
 # DONE qué licencia necesito para abrir un negocio en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
 # DONE licencia actividad taller mecánico valencia | licencia-ambiental
-abrir restaurante valencia requisitos licencia | declaracion-responsable-ambiental
+# DONE abrir restaurante valencia requisitos licencia | declaracion-responsable-ambiental
 licencia actividad bar cafetería valencia | declaracion-responsable-ambiental
 comunicación actividad inocua precio y plazo valencia | comunicacion-actividad-inocua
 declaración responsable ambiental valencia precio requisitos | declaracion-responsable-ambiental
