@@ -6,7 +6,7 @@
 # DONE licencia actividad taller mecánico valencia | licencia-ambiental
 # DONE abrir restaurante valencia requisitos licencia | declaracion-responsable-ambiental
 # DONE licencia actividad bar cafetería valencia | declaracion-responsable-ambiental
-comunicación actividad inocua precio y plazo valencia | comunicacion-actividad-inocua
+# DONE comunicación actividad inocua precio y plazo valencia | comunicacion-actividad-inocua
 declaración responsable ambiental valencia precio requisitos | declaracion-responsable-ambiental
 licencia ambiental comunidad valenciana requisitos | licencia-ambiental
 qué actividades necesitan licencia ambiental en valencia | licencia-ambiental
