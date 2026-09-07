@@ -3250,6 +3250,55 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['declaracion-responsable-ambiental'],
   },
+  {
+    slug: 'licencia-ambiental-comunidad-valenciana-requisitos',
+    title: 'Licencia Ambiental en la Comunidad Valenciana: Requisitos Clave para tu Actividad',
+    metaTitle: 'Licencia Ambiental CV: Requisitos Esenciales y Proceso',
+    description:
+      'Descubre los requisitos esenciales para obtener tu Licencia Ambiental en la Comunidad Valenciana. Guía completa para asegurar la legalidad de tu proyecto.',
+    publishDate: '2026-09-07',
+    keywords: ['licencia ambiental comunidad valenciana', 'requisitos licencia ambiental CV', 'tramitar licencia ambiental valencia'],
+    intro:
+      'Si planeas iniciar o expandir una actividad en la Comunidad Valenciana, es crucial conocer los requisitos para la Licencia Ambiental. Este permiso garantiza que tu proyecto cumple con la normativa de protección del medio ambiente, siendo un paso indispensable para operar legalmente y con responsabilidad ambiental.',
+    sections: [
+      {
+        heading: '¿Qué es la Licencia Ambiental y por qué es necesaria?',
+        paragraphs: [
+          'La Licencia Ambiental es un permiso administrativo que evalúa y controla el impacto ambiental de determinadas actividades, garantizando que estas se desarrollen de forma sostenible y respetuosa con el entorno. En la Comunidad Valenciana, su obtención es un requisito legal indispensable para la puesta en marcha de proyectos que, por su naturaleza o magnitud, pueden generar efectos significativos en el medio ambiente.',
+          'Este instrumento no solo protege los recursos naturales, sino que también previene sanciones y problemas legales futuros para los promotores. Es una herramienta fundamental para asegurar la coexistencia de la actividad económica con la conservación de la calidad del aire, el agua, el suelo y la biodiversidad, contribuyendo al desarrollo sostenible de nuestra región.',
+        ],
+      },
+      {
+        heading: 'Actividades sujetas a Licencia Ambiental en la Comunidad Valenciana',
+        paragraphs: [
+          'No todas las actividades requieren una Licencia Ambiental. La normativa autonómica, en concreto la Ley 6/2014, de 25 de julio, de Prevención, Calidad y Control Ambiental de Actividades en la Comunitat Valenciana, y sus reglamentos de desarrollo, especifican en sus anexos el tipo de proyectos que deben someterse a este régimen. Generalmente, son instalaciones industriales, agropecuarias de cierta envergadura, o actividades con potencial contaminante significativo.',
+          'Es importante diferenciar la Licencia Ambiental de otros trámites como la Declaración Responsable o la Comunicación Ambiental. Mientras que estas últimas son para actividades de menor impacto, la Licencia Ambiental se aplica a proyectos que requieren una evaluación ambiental más exhaustiva debido a sus posibles repercusiones. Determinar el tipo de permiso adecuado es el primer paso crítico.',
+        ],
+      },
+      {
+        heading: 'Requisitos Documentales Clave para la Solicitud',
+        paragraphs: [
+          'La solicitud de la Licencia Ambiental exige la presentación de una documentación técnica rigurosa. Entre los requisitos principales se encuentra la Memoria o Proyecto Técnico de la actividad, que debe detallar todos los aspectos constructivos y operacionales. Además, es imprescindible la elaboración de un Estudio de Impacto Ambiental que evalúe los efectos potenciales del proyecto y proponga medidas correctoras y compensatorias.',
+          'Otros documentos esenciales incluyen planos de situación y emplazamiento, justificantes de compatibilidad urbanística, estudios acústicos si procede, y un plan de gestión de residuos. La precisión y completitud de esta documentación son cruciales para evitar retrasos y requerimientos adicionales por parte de la administración local o autonómica en la Comunidad Valenciana.',
+        ],
+      },
+      {
+        heading: 'El Proceso de Tramitación: Pasos y Plazos',
+        paragraphs: [
+          'La tramitación de una Licencia Ambiental en la Comunidad Valenciana es un proceso que implica varias fases. Comienza con la presentación de la solicitud y la documentación técnica en el ayuntamiento correspondiente o ante la Conselleria competente. Posteriormente, se abre un periodo de información pública para que los interesados puedan presentar alegaciones, y se solicitan informes a diferentes organismos sectoriales (hidrografía, sanidad, cultura, etc.).',
+          'Una vez recabados todos los informes y analizadas las alegaciones, la administración emite una propuesta de resolución, que puede incluir condiciones específicas. Los plazos pueden variar considerablemente, oscilando habitualmente entre 6 y 12 meses, o incluso más, dependiendo de la complejidad del proyecto y de la agilidad de los organismos intervinientes. La paciencia y una buena planificación son clave.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos',
+        paragraphs: [
+          'En Licenza Ingenieros, somos especialistas en la gestión integral de Licencias Ambientales en la Comunidad Valenciana. Entendemos la complejidad de los requisitos y los plazos, por lo que ofrecemos un servicio completo que abarca desde la elaboración de toda la documentación técnica (proyectos, estudios ambientales, planes de residuos) hasta el seguimiento continuo del expediente. Nuestro objetivo es simplificar el proceso para usted, garantizando que su actividad cumpla con todas las normativas y obtenga la licencia en el menor tiempo posible.',
+          'Con un profundo conocimiento de la legislación autonómica y local en Valencia, le asesoramos para optimizar su proyecto, identificando y resolviendo de antemano cualquier posible obstáculo ambiental. Confíe en nuestra experiencia para asegurar la viabilidad legal y ambiental de su inversión, permitiéndole centrarse en el éxito de su negocio mientras nosotros nos encargamos de la burocracia.',
+        ],
+      },
+    ],
+    relatedServices: ['licencia-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
