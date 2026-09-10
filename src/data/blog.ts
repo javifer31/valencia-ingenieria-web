@@ -3341,6 +3341,26 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['licencia-ambiental'],
   },
+  {
+    slug: 'test-slug',
+    title: 'Test Title',
+    metaTitle: 'Test Meta Title',
+    description:
+      'Test Description',
+    publishDate: '2026-09-10',
+    keywords: ['test'],
+    intro:
+      'Test Intro.',
+    sections: [
+      {
+        heading: 'Test Heading',
+        paragraphs: [
+          'Test paragraph.',
+        ],
+      },
+    ],
+    relatedServices: ['licencia-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
