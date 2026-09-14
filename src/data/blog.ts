@@ -3361,6 +3361,55 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['licencia-ambiental'],
   },
+  {
+    slug: 'que-actividades-necesitan-licencia-ambiental-valencia',
+    title: 'Licencia Ambiental en Valencia: ¿Qué Actividades la Requieren?',
+    metaTitle: 'Licencia Ambiental en Valencia: Actividades Obligadas',
+    description:
+      'Descubre qué actividades empresariales en la Comunidad Valenciana requieren una Licencia Ambiental. Evita sanciones y cumple la normativa con Licenza Ingenieros.',
+    publishDate: '2026-09-14',
+    keywords: ['licencia ambiental valencia', 'actividades licencia ambiental', 'normativa ambiental comunidad valenciana'],
+    intro:
+      'En la Comunidad Valenciana, numerosas actividades industriales y empresariales están sujetas a la obtención de una Licencia Ambiental. Este permiso es crucial para garantizar que su operación se realiza respetando el medio ambiente y la salud pública. Conocer qué tipo de negocio necesita esta licencia es el primer paso para asegurar el cumplimiento normativo y evitar posibles sanciones.',
+    sections: [
+      {
+        heading: '¿Qué es la Licencia Ambiental y por qué es necesaria?',
+        paragraphs: [
+          'La Licencia Ambiental es un instrumento de control preventivo clave en la Comunidad Valenciana para actividades que, por su naturaleza, pueden generar un impacto significativo en el entorno. Su objetivo es asegurar que estas operaciones se desarrollen de manera compatible con la protección del medio ambiente y la salud de los ciudadanos, de acuerdo con la Ley 6/2014, de Prevención, Calidad y Control Ambiental de Actividades.',
+          'Obtener esta licencia es vital no solo para el cumplimiento legal, sino también para contribuir a la sostenibilidad y al desarrollo responsable. Permite minimizar la contaminación del aire, el agua y el suelo, gestionar adecuadamente los residuos y reducir riesgos inherentes a ciertas actividades industriales, beneficiando a toda la Comunidad Valenciana.',
+        ],
+      },
+      {
+        heading: 'Criterios para determinar si una actividad necesita Licencia Ambiental',
+        paragraphs: [
+          'La necesidad de una Licencia Ambiental no es universal; depende de una combinación de factores que incluyen el tipo de actividad, su escala productiva, la ubicación geográfica y, crucialmente, su potencial de impacto ambiental. La Ley 6/2014 clasifica las actividades en diferentes anexos, estableciendo umbrales y criterios que determinan el tipo de permiso requerido, que puede ir desde una Comunicación Ambiental hasta una Autorización Ambiental Integrada.',
+          'Actividades como grandes instalaciones industriales, explotaciones ganaderas intensivas o ciertas plantas de tratamiento de residuos, suelen requerir la Licencia Ambiental. Por otro lado, actividades de menor impacto podrían gestionarse a través de una Declaración Responsable Ambiental. La clave está en una evaluación técnica detallada que identifique correctamente el régimen aplicable para cada negocio en Valencia.',
+        ],
+      },
+      {
+        heading: 'Ejemplos concretos de actividades en Valencia que la requieren',
+        paragraphs: [
+          'En la provincia de Valencia y el resto de la Comunidad Valenciana, la Licencia Ambiental es indispensable para una amplia variedad de sectores. Esto incluye, por ejemplo, naves industriales dedicadas a la fabricación con procesos que generan emisiones, talleres de automoción con operaciones de pintura o gestión de aceites usados, ciertas explotaciones avícolas o ganaderas de gran tamaño, y plantas de gestión y valorización de residuos.',
+          'También se exige para instalaciones energéticas de cierta capacidad, grandes centros logísticos con almacenamiento de sustancias peligrosas, o complejos agroalimentarios. Cada caso es único, y la interpretación de la normativa requiere conocimiento especializado para determinar si su actividad en Valencia se encuadra dentro de los supuestos que exigen este permiso ambiental.',
+        ],
+      },
+      {
+        heading: 'Consecuencias de operar sin Licencia Ambiental en la Comunidad Valenciana',
+        paragraphs: [
+          'Operar una actividad sujeta a Licencia Ambiental sin disponer de ella en la Comunidad Valenciana conlleva riesgos significativos. Las autoridades ambientales están facultadas para imponer sanciones económicas considerables, que pueden ascender a miles o incluso cientos de miles de euros, en función de la gravedad y el impacto de la infracción. Estas multas pueden afectar seriamente la viabilidad económica de un negocio.',
+          'Más allá de las multas, la falta de licencia puede resultar en la paralización temporal o el cierre definitivo de la actividad, lo que implica una pérdida total de la inversión y la interrupción del negocio. Además, genera un grave daño a la imagen y reputación de la empresa ante clientes, proveedores y la sociedad, comprometiendo su futuro en el mercado valenciano.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos en Licenza Ingenieros',
+        paragraphs: [
+          'En Licenza Ingenieros, somos especialistas en la gestión y tramitación de la Licencia Ambiental para todo tipo de actividades en la Comunidad Valenciana. Nuestro equipo técnico posee una profunda experiencia y conocimiento de la Ley 6/2014 y el resto de la normativa aplicable. Le ofrecemos un asesoramiento integral, desde el análisis inicial de su actividad hasta la preparación de toda la documentación técnica y administrativa necesaria.',
+          'Nos encargamos de la interlocución con las administraciones competentes en Valencia, asegurando que su proyecto cumpla con todas las exigencias ambientales de forma eficiente y sin contratiempos. No se arriesgue a sanciones; contáctenos para obtener una consulta personalizada sobre su `licencia-ambiental`. Garantizamos un proceso transparente y profesional para que su negocio opere con todas las garantías legales y ambientales.',
+        ],
+      },
+    ],
+    relatedServices: ['licencia-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
