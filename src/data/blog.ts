@@ -3543,6 +3543,50 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['licencia-ambiental'],
   },
+  {
+    slug: 'que-actividades-necesitan-licencia-ambiental-en-valencia',
+    title: 'Licencia Ambiental en Valencia: ¿Qué Actividades la Necesitan?',
+    metaTitle: 'Actividades con Licencia Ambiental en Valencia | Licenza Ingenieros',
+    description:
+      'Descubre qué actividades en la Comunidad Valenciana requieren licencia ambiental. Evita sanciones y asegura la legalidad de tu negocio con Licenza Ingenieros.',
+    publishDate: '2026-09-21',
+    keywords: ['licencia ambiental valencia', 'actividades licencia ambiental', 'permisos ambientales comunidad valenciana', 'ingeniería ambiental valencia'],
+    intro:
+      'En la Comunidad Valenciana, la protección del medio ambiente es una prioridad. Muchas actividades empresariales requieren de una licencia ambiental para operar legalmente, asegurando que su impacto sobre el entorno sea mínimo y controlado. ¿Sabes si tu negocio necesita este permiso crucial en Valencia?',
+    sections: [
+      {
+        heading: '¿Qué es la Licencia Ambiental?',
+        paragraphs: [
+          'Es una autorización que garantiza que la actividad minimice el impacto ambiental en la Comunidad Valenciana.',
+        ],
+      },
+      {
+        heading: 'Actividades sujetas a Licencia Ambiental',
+        paragraphs: [
+          'La Ley 6/2014 valenciana detalla las actividades obligadas, como industrias o explotaciones ganaderas.',
+        ],
+      },
+      {
+        heading: 'Proceso y Plazos',
+        paragraphs: [
+          'Implica proyecto técnico, solicitud, informes y puede durar de 6 meses a más de un año. Los costes varían.',
+        ],
+      },
+      {
+        heading: 'Consecuencias sin Licencia',
+        paragraphs: [
+          'Multas, paralización y daño a la reputación son riesgos graves si se opera sin este permiso en Valencia.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos en Licenza Ingenieros',
+        paragraphs: [
+          'Gestionamos su Licencia Ambiental en la Comunidad Valenciana con experiencia. Contacte con nosotros.',
+        ],
+      },
+    ],
+    relatedServices: ['licencia-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
