@@ -3895,6 +3895,47 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['licencia-ambiental'],
   },
+  {
+    slug: 'actividades-licencia-ambiental-valencia',
+    title: 'Licencia Ambiental en Valencia: Qué Actividades la Necesitan',
+    metaTitle: 'Actividades con Licencia Ambiental en Valencia | Licenza Ingenieros',
+    description:
+      'Descubre qué actividades empresariales y comerciales en la Comunidad Valenciana requieren licencia ambiental. Evita sanciones y cumple la normativa con nuestra guía.',
+    publishDate: '2026-10-01',
+    keywords: ['licencia ambiental valencia', 'actividades licencia ambiental', 'ingenieria ambiental valencia'],
+    intro:
+      'En la Comunidad Valenciana, la licencia ambiental es un requisito indispensable para garantizar que ciertas actividades industriales y comerciales minimicen su impacto en el medio ambiente. Entender qué negocios necesitan esta autorización es crucial para cumplir con la legislación vigente y evitar posibles sanciones, asegurando un desarrollo sostenible y responsable.',
+    sections: [
+      {
+        heading: 'Entendiendo la Licencia Ambiental en la Comunidad Valenciana',
+        paragraphs: [
+          'La Licencia Ambiental Unificada (LAU) es una autorización administrativa que integra las evaluaciones de impacto ambiental y las autorizaciones sectoriales en un único procedimiento. Su objetivo principal es asegurar la prevención y el control integrados de la contaminación, garantizando que cualquier actividad con potencial impacto ambiental opere bajo los máximos estándares de protección. Es un pilar fundamental de la política ambiental de la Unión Europea, transpuesto a la legislación española y, específicamente, a la normativa autonómica valenciana.',
+          'Este instrumento legal aplica a instalaciones donde se desarrollan actividades industriales o productivas con un alto riesgo de contaminación. No solo se centra en las emisiones a la atmósfera o los vertidos de agua, sino que considera todos los factores ambientales: ruido, residuos, consumo de energía y recursos naturales, entre otros. Cumplir con ella no es solo una obligación legal, sino una inversión en la sostenibilidad y la reputación de la empresa en la Comunidad Valenciana.',
+        ],
+      },
+      {
+        heading: 'Clasificación de Actividades: ¿Tu negocio la necesita?',
+        paragraphs: [
+          'La necesidad de una licencia ambiental no es universal; se aplica a un catálogo específico de actividades consideradas potencialmente contaminantes. Estas suelen incluir grandes instalaciones de producción de energía, refinerías, industrias químicas, metalúrgicas, cementeras, explotaciones ganaderas intensivas con un determinado número de cabezas de ganado, ciertas actividades de gestión de residuos, y plantas de tratamiento de aguas residuales urbanas de gran capacidad. La clasificación se basa en su potencial de generar emisiones, vertidos o residuos significativos.',
+          'Para saber si tu actividad en la provincia de Valencia está sujeta a este régimen, es imprescindible consultar la normativa vigente, que detalla las categorías específicas. Por ejemplo, explotaciones ganaderas porcinas o avícolas por encima de ciertos umbrales, grandes instalaciones agroalimentarias, o incluso ciertas actividades de valorización o eliminación de residuos, figuran en este listado. Un estudio previo de la actividad y sus características es esencial para determinar la obligación de tramitar la Licencia Ambiental.',
+        ],
+      },
+      {
+        heading: 'Proceso y Plazos para Obtener la Licencia Ambiental',
+        paragraphs: [
+          'La tramitación de la Licencia Ambiental en la Comunidad Valenciana es un proceso que exige rigurosidad y el cumplimiento de varias fases. Generalmente, comienza con la elaboración de un Proyecto de Actividad por parte de un técnico competente, que detalla la instalación, el proceso productivo, las medidas correctoras y preventivas, y el estudio de impacto ambiental. Este proyecto se presenta ante la administración competente (generalmente la Conselleria de Medio Ambiente), que inicia un expediente de evaluación.',
+          'Tras la solicitud, el proceso incluye periodos de información pública y consulta a organismos sectoriales (salud pública, urbanismo, etc.), quienes emiten informes preceptivos. Posteriormente, se realiza una evaluación técnica y, finalmente, la resolución que concede o deniega la licencia, estableciendo las condiciones de operación. Los plazos pueden ser extensos, habitualmente entre 6 meses y más de un año, dependiendo de la complejidad del proyecto, la correcta presentación de la documentación y la agilidad de los trámites administrativos.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos',
+        paragraphs: [
+          'En Licenza Ingenieros, entendemos la complejidad y la importancia de la Licencia Ambiental para su proyecto en la Comunidad Valenciana. Nuestro equipo de ingenieros especializados posee un profundo conocimiento de la normativa autonómica y la experiencia necesaria para guiarle en cada etapa del proceso, desde la elaboración del proyecto técnico y el estudio de impacto ambiental hasta la interlocución con la administración y el seguimiento de los trámites. Nos encargamos de todo para que su actividad cumpla escrupulosamente con la legislación, minimice su impacto ambiental y se desarrolle con todas las garantías. Confíe en nosotros para obtener su licencia ambiental de forma eficiente y segura, permitiéndole centrarse en lo que mejor sabe hacer: su negocio. Visite nuestro servicio de Licencia Ambiental para más información.',
+        ],
+      },
+    ],
+    relatedServices: ['licencia-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
