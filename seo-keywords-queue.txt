@@ -12,7 +12,7 @@
 # DONE qué actividades necesitan licencia ambiental en valencia | licencia-ambiental
 # DONE legalizar negocio sin licencia valencia qué hacer | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
 # DONE multa por abrir sin licencia de actividad valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
-cambio de actividad local comercial valencia trámite | comunicacion-actividad-inocua,declaracion-responsable-ambiental
+# DONE cambio de actividad local comercial valencia trámite | comunicacion-actividad-inocua,declaracion-responsable-ambiental
 licencia actividad clínica dental consulta médica valencia | declaracion-responsable-ambiental
 licencia actividad gimnasio crossfit box valencia | declaracion-responsable-ambiental
 licencia peluquería centro estética valencia | comunicacion-actividad-inocua

@@ -4250,6 +4250,55 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['comunicacion-actividad-inocua', 'declaracion-responsable-ambiental'],
   },
+  {
+    slug: 'licencia-actividad-clinica-dental-consulta-medica-valencia',
+    title: 'Licencia de Actividad para Clínicas Dentales y Consultas Médicas en Valencia',
+    metaTitle: 'Licencia Actividad Clínica Dental Consulta Médica Valencia',
+    description:
+      'Obtenga su licencia de actividad para clínica dental o consulta médica en Valencia. Guía completa de requisitos, trámites y normativa aplicable en la Comunidad Valenciana.',
+    publishDate: '2026-10-16',
+    keywords: ['licencia actividad clínica dental valencia', 'apertura consulta médica valencia', 'permiso sanitario valencia'],
+    intro:
+      'Abrir una clínica dental o una consulta médica en Valencia implica cumplir con una serie de requisitos legales y administrativos esenciales. Uno de los más importantes es la obtención de la licencia de actividad, que certifica que su local cumple con todas las normativas de seguridad, salubridad y accesibilidad. En este artículo, desglosamos los pasos clave para conseguirla en la Comunidad Valenciana y asegurar el éxito de su proyecto.',
+    sections: [
+      {
+        heading: '¿Qué implica la licencia de actividad para centros sanitarios?',
+        paragraphs: [
+          'La licencia de actividad, también conocida como licencia de apertura o ambiental, es obligatoria para cualquier establecimiento que desarrolle una actividad económica, incluyendo clínicas y consultas. En Valencia, esto asegura que el espacio es apto para un uso sanitario, cumpliendo con el Plan General de Ordenación Urbana (PGOU) y otras regulaciones municipales.',
+          'No solo se trata del ayuntamiento, sino también de la Conselleria de Sanidad Universal y Salud Pública de la Comunidad Valenciana, que establece requisitos específicos para la autorización de centros y servicios sanitarios.',
+        ],
+      },
+      {
+        heading: 'Trámites y requisitos esenciales en la Comunidad Valenciana',
+        paragraphs: [
+          'Los estudios técnicos necesarios incluyen un proyecto técnico de actividad firmado por un ingeniero competente, que contenga planos, memorias descriptivas y el cumplimiento normativo (urbanístico, sectorial, contra incendios, accesibilidad, etc.). Para actividades sanitarias, la normativa de referencia es el Decreto 97/2010, de 27 de mayo, del Consell, que regula la autorización sanitaria de centros, servicios y establecimientos sanitarios de la Comunidad Valenciana.',
+          'El proceso general implica una solicitud previa, inspección por parte del ayuntamiento y, si aplica, de la Conselleria de Sanidad, y finalmente la concesión de la licencia. Una clínica dental o consulta médica generalmente se considera una actividad calificada por su impacto ambiental y de salubridad. En algunos casos, podría tramitarse mediante una Declaración Responsable.',
+        ],
+      },
+      {
+        heading: 'Plazos y costes orientativos',
+        paragraphs: [
+          'Los plazos pueden variar considerablemente. Para una licencia de actividad en Valencia, puede oscilar entre 3 y 6 meses, dependiendo de la complejidad del proyecto y la agilidad de los organismos. Las Declaraciones Responsables son más rápidas, permitiendo la apertura con la presentación, pero requieren un proyecto técnico previo.',
+          'Los honorarios de ingeniería para el proyecto técnico pueden variar entre 1.000€ y 3.000€, dependiendo de la superficie y las instalaciones. A esto se suman las tasas municipales, que pueden ir desde unos pocos cientos de euros hasta más de mil, según la superficie y la categoría de la actividad en cada ayuntamiento de la Comunidad Valenciana.',
+        ],
+      },
+      {
+        heading: 'La importancia de la consultoría especializada',
+        paragraphs: [
+          'La complejidad de la normativa (urbanística, sanitaria, de prevención de incendios, accesibilidad) hace que cometer errores sea fácil, lo que puede retrasar la apertura o generar sanciones. Un ingeniero especialista puede identificar posibles problemas desde el inicio y diseñar soluciones adecuadas.',
+          'Un buen asesoramiento puede optimizar el proyecto, no solo para cumplir la ley, sino también para mejorar la funcionalidad y eficiencia del espacio, integrando las necesidades del negocio con los requisitos técnicos.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos',
+        paragraphs: [
+          'En Licenza Ingenieros, somos especialistas en la tramitación de licencias de actividad para clínicas dentales y consultas médicas en toda la Comunidad Valenciana. Desde la fase inicial de estudio de viabilidad hasta la obtención final de la licencia, nuestro equipo de ingenieros expertos se encarga de todo el proceso, elaborando el proyecto técnico, gestionando la documentación y actuando como interlocutores con las administraciones. Nos aseguramos de que su proyecto cumpla con todas las normativas, incluyendo el Decreto 97/2010 y las ordenanzas municipales, para que pueda abrir su negocio con total tranquilidad y en el menor tiempo posible.',
+          'Si necesita asesoramiento para su nueva clínica o consulta en Valencia, no dude en contactarnos. Le ofrecemos un servicio integral que incluye el diseño y adaptación de su local, la tramitación de la Declaración Responsable Ambiental si fuera el caso, y la obtención de todas las autorizaciones necesarias para que su actividad sanitaria comience con éxito.',
+        ],
+      },
+    ],
+    relatedServices: ['declaracion-responsable-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
