@@ -4521,6 +4521,54 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['comunicacion-actividad-inocua'],
   },
+  {
+    slug: 'licencia-actividad-coworking-valencia',
+    title: 'Licencia de Actividad para Coworking en Valencia: Guía Completa',
+    metaTitle: 'Licencia Coworking Valencia: Guía Completa para Espacios Compartidos',
+    description:
+      'Obtén tu licencia de actividad para espacios de coworking en Valencia. Guía esencial sobre normativa, requisitos y plazos para operar legalmente tu oficina compartida.',
+    publishDate: '2026-10-27',
+    keywords: ['licencia actividad coworking valencia', 'espacio compartido valencia', 'requisitos coworking valencia', 'legalizar coworking comunidad valenciana', 'apertura coworking valencia'],
+    intro:
+      '¿Estás pensando en abrir un espacio de coworking en Valencia o ya gestionas uno y necesitas regularizar tu situación? La obtención de la licencia de actividad es un paso fundamental para garantizar la legalidad y seguridad de tu negocio. En la Comunidad Valenciana, cumplir con la normativa específica es clave para el éxito de tu proyecto de oficina compartida.',
+    sections: [
+      {
+        heading: '¿Qué tipo de licencia necesita un coworking en Valencia?',
+        paragraphs: [
+          'Un espacio de coworking en Valencia generalmente se clasifica como una actividad clasificada o inocua, dependiendo de su impacto ambiental y las características específicas de los servicios que ofrece. Para la mayoría de los casos de oficinas compartidas sin actividades molestas o peligrosas, se aplicaría la Comunicación de Actividad Inocua o, en su defecto, la Declaración Responsable Ambiental, que agilizan los trámites.',
+          'La clave está en la evaluación de la superficie, el número de puestos de trabajo, la existencia de zonas de restauración o eventos, y si se realizan actividades que generen ruido o residuos especiales. Es vital conocer la normativa local, como el Plan General de Ordenación Urbana de Valencia, que establecerá los usos permitidos en la zona y los requisitos técnicos específicos del local.',
+        ],
+      },
+      {
+        heading: 'Requisitos y documentación clave para tu licencia',
+        paragraphs: [
+          'Los requisitos para la licencia de actividad de un coworking en Valencia incluyen un Proyecto Técnico firmado por un ingeniero o arquitecto, que detalle la distribución, instalaciones (electricidad, climatización, ventilación, protección contra incendios), accesibilidad y el cumplimiento de códigos técnicos. También se necesitarán planos, memorias descriptivas y, en algunos casos, estudios de impacto acústico o informes de residuos.',
+          'La documentación adicional suele comprender escrituras de propiedad o contrato de alquiler del local, CIF/NIF de la empresa o autónomo, seguro de responsabilidad civil, y las licencias de obra correspondientes si se han realizado reformas. Es fundamental que el local cumpla con las normativas de seguridad contra incendios (CTE DB-SI), accesibilidad (CTE DB-SUA) y salubridad (CTE DB-HS), elementos que serán inspeccionados.',
+        ],
+      },
+      {
+        heading: 'Plazos y costes orientativos del proceso',
+        paragraphs: [
+          'El proceso para obtener la licencia de actividad de un coworking en la Comunidad Valenciana puede variar en plazos. Una Comunicación de Actividad Inocua puede ser efectiva desde el momento de su presentación si la documentación es correcta, aunque el ayuntamiento tendrá un plazo posterior para realizar inspecciones. Para una Declaración Responsable o Licencia Ambiental, los plazos suelen ser más largos, pudiendo extenderse de 2 a 6 meses, dependiendo de la carga de trabajo municipal y la complejidad del proyecto.',
+          'En cuanto a los costes, estos incluyen los honorarios del técnico redactor del proyecto (que pueden oscilar entre 1.500€ y 4.000€ o más, según el tamaño y complejidad), las tasas municipales por la tramitación de la licencia (variables según el ayuntamiento y la superficie del local), y posibles costes asociados a reformas o adecuaciones del espacio. Una inversión inicial bien planificada evitará problemas futuros.',
+        ],
+      },
+      {
+        heading: 'Beneficios de una licencia en regla y cómo evitar sanciones',
+        paragraphs: [
+          'Contar con la licencia de actividad en regla no solo es una obligación legal, sino que también ofrece seguridad jurídica, permitiendo operar sin el riesgo de multas o cierres. Además, transmite confianza a tus clientes y colaboradores, asegurando que tu espacio de coworking es un entorno seguro y legalmente establecido. Estar al día con la normativa facilita futuras ampliaciones o cambios de actividad.',
+          'Para evitar sanciones, es crucial que el proyecto técnico sea riguroso y que la ejecución de las obras se ajuste estrictamente a lo proyectado y a la normativa vigente. Realizar revisiones periódicas de las instalaciones y mantener al día la documentación (revisiones de extintores, certificados eléctricos, etc.) son prácticas esenciales. Las inspecciones municipales pueden ser sorpresivas, y un expediente completo es tu mejor defensa.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos',
+        paragraphs: [
+          'En Licenza Ingenieros, somos especialistas en la tramitación de licencias de actividad para espacios de coworking y oficinas compartidas en Valencia y toda la Comunidad Valenciana. Nuestro equipo de ingenieros y arquitectos te guiará durante todo el proceso, desde la elaboración del proyecto técnico hasta la gestión con la administración local, asegurando que tu centro de trabajo cumpla con todas las normativas. Contacta con nosotros para un estudio personalizado y obtén tu comunicación de actividad inocua o licencia ambiental sin complicaciones, permitiéndote centrarte en lo que mejor sabes hacer: gestionar tu negocio.',
+        ],
+      },
+    ],
+    relatedServices: ['comunicacion-actividad-inocua'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
