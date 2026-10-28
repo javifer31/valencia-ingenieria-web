@@ -17,7 +17,7 @@
 # DONE licencia actividad gimnasio crossfit box valencia | declaracion-responsable-ambiental
 # DONE licencia peluquería centro estética valencia | comunicacion-actividad-inocua
 # DONE abrir tienda online con almacén valencia licencia | comunicacion-actividad-inocua
-licencia actividad coworking espacio compartido valencia | comunicacion-actividad-inocua
+# DONE licencia actividad coworking espacio compartido valencia | comunicacion-actividad-inocua
 segunda actividad en el mismo local valencia | declaracion-responsable-ambiental
 renovar licencia de actividad caducada valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental
 cuánto tarda licencia de actividad en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental

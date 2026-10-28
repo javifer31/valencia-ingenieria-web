@@ -4569,6 +4569,47 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['comunicacion-actividad-inocua'],
   },
+  {
+    slug: 'segunda-actividad-mismo-local-valencia',
+    title: 'Añadir una Segunda Actividad en el Mismo Local en Valencia: Guía Práctica',
+    metaTitle: 'Segunda Actividad Mismo Local Valencia: Guía Completa',
+    description:
+      '¿Quieres añadir una segunda actividad en tu local de Valencia? Descubre los trámites, compatibilidad y normativa clave para evitar problemas y asegurar el éxito de tu proyecto.',
+    publishDate: '2026-10-28',
+    keywords: ['segunda actividad en el mismo local valencia', 'ampliar actividad local valencia', 'compatibilidad actividades valencia', 'licencia actividad valencia'],
+    intro:
+      'Si estás pensando en expandir tu negocio y añadir una segunda actividad en el mismo local en Valencia, es fundamental conocer los requisitos legales y técnicos para hacerlo correctamente. Este proceso, aunque común, requiere una planificación cuidadosa para asegurar la compatibilidad y el cumplimiento de la normativa vigente en la Comunidad Valenciana.',
+    sections: [
+      {
+        heading: 'Compatibilidad de actividades y normativa urbanística',
+        paragraphs: [
+          'El primer paso es verificar la compatibilidad de las actividades que deseas desarrollar en un mismo espacio. La normativa urbanística municipal de Valencia, a través de su Plan General de Ordenación Urbana (PGOU), clasifica las actividades y establece si son compatibles entre sí, o si requieren zonas separadas, o incluso si una anula a la otra. Es crucial revisar esta compatibilidad antes de cualquier inversión.',
+          'Además de la compatibilidad de usos, es vital considerar la intensidad de las actividades. No es lo mismo añadir un pequeño despacho profesional a un comercio existente, que intentar combinar una actividad con gran afluencia de público o que genere residuos específicos, con otra. Las ordenanzas municipales, como la de protección contra la contaminación acústica o la de gestión de residuos, serán determinantes.',
+        ],
+      },
+      {
+        heading: 'Trámites y licencias clave en la Comunidad Valenciana',
+        paragraphs: [
+          'Para la mayoría de las segundas actividades en el mismo local en Valencia, deberás gestionar la modificación o ampliación de tu licencia de actividad. Esto suele implicar la presentación de un proyecto técnico actualizado, firmado por un ingeniero o arquitecto, que contemple las nuevas condiciones de uso, seguridad, salubridad y medioambientales.',
+          'Uno de los trámites más comunes es la Declaración Responsable Ambiental, especialmente para actividades clasificadas como \'inocuas\'. Esta permite iniciar la actividad bajo la responsabilidad del promotor, agilizando los plazos. Sin embargo, para actividades más complejas o \'calificadas\', podría ser necesaria una Licencia Ambiental o incluso una Autorización Ambiental Integrada, con plazos que pueden variar desde 3 hasta 12 meses.',
+        ],
+      },
+      {
+        heading: 'Aspectos técnicos y plazos a considerar',
+        paragraphs: [
+          'En el proyecto técnico se analizarán aspectos como la evacuación, ventilación, insonorización, accesibilidad y eficiencia energética del local, adaptándolos a las exigencias de ambas actividades. Por ejemplo, si una de las nuevas actividades implica la manipulación de alimentos, se requerirán instalaciones específicas de higiene y seguridad alimentaria, con inspecciones por parte de Sanidad. Los costes de estos proyectos pueden oscilar entre 800€ y 3.000€, dependiendo de la complejidad.',
+          'Los plazos para obtener las aprobaciones pueden variar significativamente. Mientras que una Declaración Responsable Ambiental puede estar lista en unas pocas semanas (tras la redacción del proyecto técnico y su visado), una licencia ambiental completa puede demorarse entre 4 y 6 meses, e incluso más si hay requerimientos adicionales o necesidad de informes sectoriales de organismos como Conselleria.',
+        ],
+      },
+      {
+        heading: 'Cómo lo resolvemos',
+        paragraphs: [
+          'En Licenza Ingenieros, somos expertos en la gestión de licencias y proyectos para la ampliación o modificación de actividades en la Comunidad Valenciana. Podemos asesorarte desde el estudio de compatibilidad inicial hasta la tramitación completa de tu Declaración Responsable Ambiental o la licencia necesaria. Con nuestra experiencia, te garantizamos un proceso eficiente y conforme a la normativa, permitiéndote expandir tu negocio con total seguridad y en los plazos más ajustados.',
+        ],
+      },
+    ],
+    relatedServices: ['declaracion-responsable-ambiental'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);
