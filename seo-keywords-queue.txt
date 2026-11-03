@@ -20,7 +20,7 @@
 # DONE licencia actividad coworking espacio compartido valencia | comunicacion-actividad-inocua
 # DONE segunda actividad en el mismo local valencia | declaracion-responsable-ambiental
 # DONE renovar licencia de actividad caducada valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental
-cuánto tarda licencia de actividad en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
+# DONE cuánto tarda licencia de actividad en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
 construir nave agrícola suelo rústico valencia | proyecto-nave-agricola,memoria-agronomica
 caseta de aperos suelo rústico valencia normativa | proyecto-nave-agricola-pequena,memoria-agronomica
 legalizar construcción suelo rústico comunidad valenciana | memoria-agronomica
