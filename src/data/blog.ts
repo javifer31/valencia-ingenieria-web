@@ -4830,6 +4830,26 @@ export const posts: BlogPost[] = [
     ],
     relatedServices: ['proyecto-nave-agricola-pequena', 'memoria-agronomica'],
   },
+  {
+    slug: 'test-slug',
+    title: 'Test Title',
+    metaTitle: 'Test Meta',
+    description:
+      'Test Description',
+    publishDate: '2026-11-06',
+    keywords: ['test'],
+    intro:
+      'Test Intro.',
+    sections: [
+      {
+        heading: 'Test Heading',
+        paragraphs: [
+          'Test Paragraph',
+        ],
+      },
+    ],
+    relatedServices: ['memoria-agronomica'],
+  },
 ];
 
 export const getPostBySlug = (slug: string) => posts.find((p) => p.slug === slug);

@@ -22,7 +22,7 @@
 # DONE renovar licencia de actividad caducada valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental
 # DONE cuánto tarda licencia de actividad en valencia | comunicacion-actividad-inocua,declaracion-responsable-ambiental,licencia-ambiental
 # DONE construir nave agrícola suelo rústico valencia | proyecto-nave-agricola,memoria-agronomica
-caseta de aperos suelo rústico valencia normativa | proyecto-nave-agricola-pequena,memoria-agronomica
+# DONE caseta de aperos suelo rústico valencia normativa | proyecto-nave-agricola-pequena,memoria-agronomica
 legalizar construcción suelo rústico comunidad valenciana | memoria-agronomica
 memoria agronómica para qué sirve cuándo la necesito | memoria-agronomica
 se puede construir en suelo rústico en la comunidad valenciana | memoria-agronomica
